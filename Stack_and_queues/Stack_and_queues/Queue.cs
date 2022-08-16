@@ -24,6 +24,17 @@ namespace Stack_and_queues
                 temp.next = node;
             }
         }
+        internal void Dequeue()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("Queue is Empty...");
+            }
+            else
+            {
+                head = head.next;
+            }
+        }
         internal void Display()
         {
             Node temp = this.head;
